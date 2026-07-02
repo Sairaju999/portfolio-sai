@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Optimization -->
+    <title>Sai Raju Valluri | Portfolio</title>
+    <meta name="description" content="Welcome to the professional portfolio of Sai Raju Valluri. Explore projects, machine learning models, full-stack systems, and core software skills." />
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- 1. WELCOME SCREEN (LANDING) -->
+    <div id="welcome-screen">
+      <canvas id="welcome-canvas"></canvas>
+      <div class="welcome-content">
+        <p class="welcome-subtitle">Welcome to my Digital Space</p>
+        <h1 class="welcome-title">WELCOME TO <br><span class="accent-text">SAI RAJU PORTFOLIO</span></h1>
+        <div class="welcome-btn-container">
+          <button class="welcome-btn" id="enter-btn">Explore Portfolio</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. MAIN WEBSITE CONTENT (Initially Hidden) -->
+    <div id="app-content">
+      <div class="bg-grid"></div>
+
+      <!-- HEADER & NAVIGATION -->
+      <header id="header">
+        <a href="#home" class="logo">
+          Sai Raju <span class="logo-dot"></span>
+        </a>
+        
+        <nav>
+          <ul class="nav-links" id="nav-menu">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          
+          <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Light/Dark Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          
+          <button class="hamburger" id="hamburger-menu" aria-label="Open Navigation Menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </nav>
+      </header>
+
+      <!-- HOME/HERO SECTION -->
+      <section id="home" class="hero-section">
+        <div class="hero-content">
+          <span class="hero-greeting">Hi there, I am</span>
+          <h1 class="hero-name">Sai Raju <span class="accent-text">Valluri</span></h1>
+          <div class="hero-role">ML Developer &amp; Web Engineer</div>
+          <p class="hero-desc">
+            B.Tech Computer Science student at SRM University - AP. Specialized in designing scalable machine learning pipelines, full-stack solutions, and GenAI recommendations.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact" class="btn-secondary">Let's Connect <i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="visual-glow"></div>
+          <div class="profile-card">
+            <div class="profile-card-inner">
+              <div class="profile-avatar-container">
+                <div class="profile-avatar-inner">
+                  <i class="fa-solid fa-user-astronaut fa-5x"></i>
+                </div>
+              </div>
+              <h2 class="profile-name">Sai Raju Valluri</h2>
+              <p class="profile-details">SRM University - AP Student</p>
+              <p class="profile-details"><i class="fa-solid fa-location-dot"></i> Nalluru, Andhra Pradesh</p>
+              <div class="profile-socials">
+                <a href="https://github.com/Sairaju999" target="_blank" class="profile-social-link" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/valluri-sai-raju-46252228a/" target="_blank" class="profile-social-link" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:sairajuvalluri@gmail.com" class="profile-social-link" aria-label="Send Email"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about">
+        <div class="section-header">
+          <span class="section-subtitle">Biography</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-info">
+            <h3>Innovating at the Intersection of ML and Web Systems</h3>
+            <p>
+              I am a passionate Computer Science student and software developer who enjoys solving analytical problems and building smart consumer applications. I have experience building end-to-end Machine Learning systems, FastAPI backends, LWC-based Salesforce solutions, and responsive full-stack websites.
+            </p>
+            <p>
+              My goal is to develop highly optimized software that utilizes modern Artificial Intelligence to automate complex operations. I am consistently learning and refining my skills in software architecture and algorithms.
+            </p>
+            <div style="margin-top: 2rem;">
+              <a href="/resume.pdf" download class="btn-primary">Download CV <i class="fa-solid fa-download"></i></a>
+            </div>
+          </div>
+          
+          <div class="education-box">
+            <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem;">Education</h3>
+            
+            <div class="education-item glass-panel">
+              <span class="edu-year">2023 - Present</span>
+              <h4 class="edu-title">B.Tech in Computer Science Engineering</h4>
+              <p class="edu-school">SRM University - AP</p>
+              <div class="edu-meta">
+                <span><i class="fa-solid fa-graduation-cap"></i> CGPA: 8.15</span>
+                <span><i class="fa-solid fa-map-pin"></i> Amaravati</span>
+              </div>
+            </div>
+            
+            <div class="education-item glass-panel">
+              <span class="edu-year">2021 - 2023</span>
+              <h4 class="edu-title">Higher Secondary Education (MPC)</h4>
+              <p class="edu-school">Tirumala Junior College</p>
+              <div class="edu-meta">
+                <span><i class="fa-solid fa-percent"></i> Percentage: 96%</span>
+                <span><i class="fa-solid fa-map-pin"></i> Visakhapatnam</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills">
+        <div class="section-header">
+          <span class="section-subtitle">Expertise</span>
+          <h2 class="section-title">My Skills</h2>
+        </div>
+        
+        <div class="skills-container">
+          <!-- Programming -->
+          <div class="skills-category glass-panel">
+            <div class="skills-category-header">
+              <div class="skills-category-icon"><i class="fa-solid fa-code"></i></div>
+              <h3 class="skills-category-title">Programming</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skills-category glass-panel">
+            <div class="skills-category-header">
+              <div class="skills-category-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <h3 class="skills-category-title">Web Development</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Vite</span>
+              <span class="skill-tag">Lightning Web Components</span>
+            </div>
+          </div>
+
+          <!-- AI/ML -->
+          <div class="skills-category glass-panel">
+            <div class="skills-category-header">
+              <div class="skills-category-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3 class="skills-category-title">AI / Machine Learning</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">PCA</span>
+              <span class="skill-tag">XGBoost</span>
+              <span class="skill-tag">LightGBM</span>
+              <span class="skill-tag">Ensemble Models</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skills-category glass-panel">
+            <div class="skills-category-header">
+              <div class="skills-category-icon"><i class="fa-solid fa-database"></i></div>
+              <h3 class="skills-category-title">Databases</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+            </div>
+          </div>
+
+          <!-- Core CS -->
+          <div class="skills-category glass-panel">
+            <div class="skills-category-header">
+              <div class="skills-category-icon"><i class="fa-solid fa-cubes"></i></div>
+              <h3 class="skills-category-title">Core Computer Science</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-tag">Data Structures</span>
+              <span class="skill-tag">Algorithms (DAA)</span>
+              <span class="skill-tag">OOPs</span>
+              <span class="skill-tag">Database Management</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skills-category glass-panel">
+            <div class="skills-category-header">
+              <div class="skills-category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <h3 class="skills-category-title">Tools &amp; DevOps</h3>
+            </div>
+            <div class="skills-list">
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Streamlit</span>
+              <span class="skill-tag">Jupyter Notebook</span>
+              <span class="skill-tag">Salesforce Apex</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience">
+        <div class="section-header">
+          <span class="section-subtitle">Work History</span>
+          <h2 class="section-title">My Experience</h2>
+        </div>
+        
+        <div class="experience-timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>ML Intern</h3>
+                  <span class="timeline-company">Infosys Springboard 6.0</span>
+                </div>
+                <span class="timeline-date">Feb – April 2026</span>
+              </div>
+              <ul class="timeline-details">
+                <li>Built an ML-driven dynamic pricing engine using XGBoost and LightGBM models based on user demand, market seasonality, and competitor trends.</li>
+                <li>Performed deep data preprocessing, data cleaning, feature engineering (price elasticity, index values), and comprehensive model evaluation.</li>
+                <li>Developed scalable FastAPI backend APIs and a Docker deployment pipeline to serve real-time price predictions.</li>
+                <li>Designed an interactive React.js dashboard to visualize key KPI metrics, pricing insights, and model forecasts.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>Salesforce Developer Intern</h3>
+                  <span class="timeline-company">Salesforce Virtual Internship — SmartBridge (AICTE)</span>
+                </div>
+                <span class="timeline-date">May – July 2025</span>
+              </div>
+              <ul class="timeline-details">
+                <li>Created custom CRM objects, relationships, security settings, and record pages to align with specific business operations.</li>
+                <li>Developed complex automation workflows using Apex Classes and modern Lightning Web Components (LWC).</li>
+                <li>Maintained and optimized apex tests, ensuring high test coverage and compliance with Salesforce deployment benchmarks.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects">
+        <div class="section-header">
+          <span class="section-subtitle">Portfolio</span>
+          <h2 class="section-title">Recent Projects</h2>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card glass-panel" data-project="shopmate">
+            <div class="project-thumbnail">
+              <div class="project-icon"><i class="fa-solid fa-cart-shopping accent-text"></i></div>
+              <div class="project-overlay">
+                <button class="project-overlay-btn">Learn More</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">ShopMate AI</h3>
+              <p class="project-desc">GenAI-Powered Intelligent Retail Recommendation System incorporating Gemini AI and live scraping.</p>
+              <div class="project-tags">
+                <span class="project-tag">FastAPI</span>
+                <span class="project-tag">Gemini AI</span>
+                <span class="project-tag">Firecrawl</span>
+                <span class="project-tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card glass-panel" data-project="wine">
+            <div class="project-thumbnail">
+              <div class="project-icon"><i class="fa-solid fa-wine-glass accent-text"></i></div>
+              <div class="project-overlay">
+                <button class="project-overlay-btn">Learn More</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Wine Quality Prediction</h3>
+              <p class="project-desc">A Machine Learning regression and classification ensemble model predicting wine quality rating scores.</p>
+              <div class="project-tags">
+                <span class="project-tag">Scikit-learn</span>
+                <span class="project-tag">Pandas</span>
+                <span class="project-tag">NumPy</span>
+                <span class="project-tag">Ensemble ML</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card glass-panel" data-project="handsmen">
+            <div class="project-thumbnail">
+              <div class="project-icon"><i class="fa-solid fa-shirt accent-text"></i></div>
+              <div class="project-overlay">
+                <button class="project-overlay-btn">Learn More</button>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">HandsMen Threads</h3>
+              <p class="project-desc">A full-stack responsive E-Commerce platform with secure checkout and catalog management.</p>
+              <div class="project-tags">
+                <span class="project-tag">HTML/CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">SQL</span>
+                <span class="project-tag">PHP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATIONS SECTION -->
+      <section id="certifications">
+        <div class="section-header">
+          <span class="section-subtitle">Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+        </div>
+        
+        <div class="certs-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge"><i class="fa-solid fa-medal"></i></div>
+            <div class="cert-info">
+              <h3>Oracle Certified: Java SE 17 Developer</h3>
+              <span class="cert-issuer">Oracle</span>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge"><i class="fa-solid fa-medal"></i></div>
+            <div class="cert-info">
+              <h3>Salesforce SmartBridge Internship Certificate</h3>
+              <span class="cert-issuer">Salesforce / SmartBridge</span>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge"><i class="fa-solid fa-medal"></i></div>
+            <div class="cert-info">
+              <h3>IBM Generative AI Credential</h3>
+              <span class="cert-issuer">IBM</span>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge"><i class="fa-solid fa-medal"></i></div>
+            <div class="cert-info">
+              <h3>Udemy SQL Certification</h3>
+              <span class="cert-issuer">Udemy</span>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge"><i class="fa-solid fa-medal"></i></div>
+            <div class="cert-info">
+              <h3>Research Participation Certificate</h3>
+              <span class="cert-issuer">SRM University - AP</span>
+            </div>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="cert-card glass-panel">
+            <div class="cert-badge"><i class="fa-solid fa-medal"></i></div>
+            <div class="cert-info">
+              <h3>Coursera Programming Fundamentals</h3>
+              <span class="cert-issuer">Coursera</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p class="contact-intro">
+              I am open to internship opportunities, freelance consulting, or collaboration on open source projects. Feel free to reach out via the form or my social channels!
+            </p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-method-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="contact-method-icon-label contact-method-label">Email</span>
+                  <div><a href="mailto:sairajuvalluri@gmail.com" class="contact-method-value">sairajuvalluri@gmail.com</a></div>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-method-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="contact-method-icon-label contact-method-label">Phone</span>
+                  <div><a href="tel:+917032463755" class="contact-method-value">+91 7032463755</a></div>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="contact-method-icon-label contact-method-label">Location</span>
+                  <div class="contact-method-value">Nalluru, Andhra Pradesh, India</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <form class="contact-form glass-panel" id="contact-form">
+            <div class="form-group-row">
+              <div class="form-group">
+                <input type="text" id="form-name" class="form-input" placeholder="Name" required>
+                <label for="form-name" class="form-label">Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="form-email" class="form-input" placeholder="Email Address" required>
+                <label for="form-email" class="form-label">Email Address</label>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <input type="text" id="form-subject" class="form-input" placeholder="Subject" required>
+              <label for="form-subject" class="form-label">Subject</label>
+            </div>
+            
+            <div class="form-group">
+              <textarea id="form-message" class="form-input" placeholder="Message" required></textarea>
+              <label for="form-message" class="form-label">Message</label>
+            </div>
+            
+            <div class="form-feedback" id="form-feedback"></div>
+            
+            <div>
+              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-copy">&copy; 2026 Sai Raju Valluri. All Rights Reserved.</div>
+        <div class="footer-links">
+          <a href="https://github.com/Sairaju999" target="_blank" class="footer-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/valluri-sai-raju" target="_blank" class="footer-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:sairajuvalluri@gmail.com" class="footer-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- 3. PROJECT DETAIL MODALS (Dynamically Populated) -->
+    <div class="modal" id="project-modal">
+      <div class="modal-content glass-panel">
+        <button class="modal-close" id="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+        <h2 class="modal-title" id="modal-title">Project Title</h2>
+        <div class="modal-tags" id="modal-tags">
+          <!-- Tags go here -->
+        </div>
+        <div class="modal-body" id="modal-body">
+          <!-- Body content goes here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Module JS script -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
