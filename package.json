@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "start": "vite preview --host 0.0.0.0 --port $PORT"
+    "dev": "vite --root \"sai raju\"",
+    "build": "vite build --root \"sai raju\" --outDir dist",
+    "preview": "vite preview --root \"sai raju\"",
+    "start": "vite preview --root \"sai raju\" --host 0.0.0.0 --port $PORT"
   },
   "devDependencies": {
     "vite": "^8.1.1"
