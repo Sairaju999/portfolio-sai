@@ -112,7 +112,7 @@ Professional work experience displayed in an interactive timeline format.
    ```bash
    npm run dev
    ```
-   The site will be available at `http://localhost:5173/`
+   The site will be available at `https://portfolio-sai-yuqt.onrender.com/`
 
 4. **Build for production**
    ```bash
